@@ -19,7 +19,7 @@ const Navigation = ({ type }) => {
   if (type === "login") {
     return (
       <p className="text-sm mt-5 text-center">
-        Don't have an account?
+        Don't have an account?{" "}
         <Link to="/register" className="font-bold text-blue-500">
           {" "}
           Register
@@ -29,7 +29,7 @@ const Navigation = ({ type }) => {
   } else {
     return (
       <p className="text-sm mt-5 text-center">
-        Already have an account?
+        Already have an account?{" "}
         <Link to="/login" className="font-bold text-blue-500">
           {" "}
           Login
