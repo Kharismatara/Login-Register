@@ -3,14 +3,8 @@ import FromRegsiter from "../Components/Fragments/FromRegister";
 import { Link } from "react-router-dom";
 const RegisPage = () => {
   return (
-    <AuthLayouts title="Register">
+    <AuthLayouts title="Register" type="register">
       <FromRegsiter />
-      <p className="my-3 text-center">
-        Don't have an account ?{" "}
-        <Link to="/login" className="font-bold text-blue-500">
-          Register
-        </Link>
-      </p>
     </AuthLayouts>
   );
 };
