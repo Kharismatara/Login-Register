@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+
 import "./index.css";
 
 //setelah install roouter
@@ -8,9 +8,10 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LogiPage from "./Pages/login.jsx";
 import RegisPage from "./Pages/register.jsx";
+import ErrorPage from "./Pages/error";
 
 const router = createBrowserRouter([
-  { path: "/", element: <div>Hello</div> },
+  { path: "/", element: <div>Hello</div>, errorElement: <ErrorPage /> },
   { path: "/login", element: <LogiPage /> },
   { path: "/register", element: <RegisPage /> },
 ]);
